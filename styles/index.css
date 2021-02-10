@@ -1,0 +1,84 @@
+*{
+    text-align: center;
+}
+
+body{
+background-image:url(../images/Beach-Sand-Background.jpg);
+background-repeat:no-repeat;
+background-position:center;
+}
+
+.logo {
+    height:130px;
+    margin-left: 40px;
+    margin-top: 70px;
+    animation: bounceIn;
+    animation-duration: 3s;
+}
+
+header{
+    font-size: 30px;
+    font-weight: bolder;
+    font-family: 'Bungee', cursive;
+}
+
+.info{
+    font-family: 'Oleo Script Swash Caps', cursive;
+    font-size: x-large;
+
+}
+
+button {
+    height: 80px;
+    width: 300px;
+    color: rgb(4, 63, 36);
+    font-family: 'Bungee', cursive;
+    font-size: large;
+    background-color: sandybrown;
+}
+
+button:hover {
+    background-color: whitesmoke;
+    transition: all 0.5s ease-in;
+}
+
+@keyframes bounceIn {
+    0% {
+      transform: scale(0.1);
+      opacity: 0;
+    }
+    60% {
+      transform: scale(1.2);
+      opacity: 1;
+    }
+    100% {
+      transform: scale(1);
+    }
+}
+
+.bird {
+    background-image: url('../images/bird-cells.svg');
+    background-size: auto 100%;
+    width: 88px;
+    height: 125px;
+    animation-name: fly-cycle;
+    animation-timing-function: steps(10);
+    animation-iteration-count: infinite;
+    animation-duration: 1s;
+    animation-delay: -0.5s;
+  }
+  @keyframes fly-cycle {
+    100% {
+    background-position: -900px 0;
+    } 
+  }
+
+  .bird--one {
+    animation-duration: 1s;
+    animation-delay: -0.5s;
+    animation-name: fly-cycle;
+  }
+  .bird--two {
+    animation-duration: 0.9s;
+    animation-delay: -0.75s;
+  }
